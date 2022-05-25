@@ -75,14 +75,14 @@
             </div>
         </nav>
         <div class="text-center py-8 text-4xl font-bold">
-            <h1>My Laravel Blog</h1>
+            <h1>Mi Blog de Laravel</h1>
         </div>
     </header>
     @yield('content')
     <footer class="mt-12">
         <div class="max-w-full bg-orange-300 p-4"></div>
         <div class="max-w-full text-center bg-gray-700 text-white p-4">
-            <div class="text-lg font-bold">@MyLaravelBlog By <a class="hover:underline" href="https://cosasdedevs.com/" target="_blank">Alberto Ramírez</a></div>
+            <div class="text-lg font-bold">@MyLaravelBlog By <a class="hover:underline" href="https://cosasdedevs.com/" target="_blank">Bule</a></div>
         </div>
     </footer>
 </body>

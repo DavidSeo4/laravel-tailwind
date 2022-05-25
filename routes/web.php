@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,10 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/', [\App\Http\Controllers\PostController::class, 'home'])->name('home');
+Route::get('/posts/{slug}', [\App\Http\Controllers\PostController::class, 'detail'])->name('posts.detail');
+
+Route::post('/comment', [\App\Http\Controllers\CommentController::class, 'store'])->name('comments.store');
+
+
+Route::resource('/admin/posts', \App\Http\Controllers\PostController::class);
