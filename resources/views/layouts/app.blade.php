@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="w-full">
-        <nav class="w-full bg-orange-300 p-1 text-white flex justify-center">
+        <nav class="w-full bg-orange-300 p-1 text-white flex justify-center header">
             <div class="w-full flex justify-between px-4">
                 @guest
                 <ul class="flex justify-between" style="width:130px">
@@ -75,7 +75,7 @@
             </div>
         </nav>
         <div class="text-center py-8 text-4xl font-bold">
-            <h1>Mi Blog de Laravel</h1>
+            <h1 class="larablog">Mi Blog de Laravel</h1>
         </div>
     </header>
     @yield('content')
