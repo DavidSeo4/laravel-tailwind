@@ -1,61 +1,26 @@
-Blog con Laravel + Tailwind CSS
+**David Seoane Machado****39461131-P**
+**Blog con Laravel + Tailwind CSS**
 
 
+1 Creamos un sitio rápido de Laravel por medio de Laragon![img](https://lh5.googleusercontent.com/8pAe2-KkOiEDKaMLh8EyfH7h7tNFqhV-OFwb2-_Hz-3uq-ccDId9r8X-3B0GAqDtGfB6dMHyGgJ85xjJca23U-Jd0Eur8j8a5kEUGyuEWrX4tFXzjK0N0pjd0RdC0KK9N0b7QEtAl77gXsEzZQ)2 Introducimos los siguientes comandoscomposer require laravel/ui --dev (instalar Laravel/ui)composer require laravel-frontend-presets/tailwindcss --dev (dependencia para usar los estilos de Tailwind CSS)php artisan ui tailwindcss --auth (generar los archivos de autenticación )npm install && npm run dev (instalar las dependencias que utiliza Tailwind CSS y compilar los css y js.)3 Ahora lanzamos el comando php artisan serve para comprobar que hasta ahora todo funciona correctamente![img](https://lh6.googleusercontent.com/mBYKHQLrS0xiWAL8FEXcJLJcDL8Ee8e6iOA-qmOEtiZ3pNZiFtsx0uQ-NFK_C7OEqWmtcgGEK-uGEOoMA8Ccpb_T7c2mEA9pWc47JJsWQGwjgGMsSraFKD81m3AK0jA9d6WtgewM5lh1zB-iBw)4 Conectamos correctamente el proyecto con la base de datos de PhpMyadmin![img](https://lh5.googleusercontent.com/7gin-WVEd8WnJU-W_usbhugIm7Nbp_f-D5_y-TThzDl_evQIIJQYuVGseMQ2U7_B76grD7R1kbPUJt4CM4Px05IyQZDfe0Jj4eQlzG7f4BY3eDfBR4BcUTZmyi83AdrSAD_z-ZwWSwf8nrxOUg)5 Crear los modelos y migraciones para los posts y comentarios. Al añadir **-m** le estamos diciendo que también nos cree el archivo para las migraciones.![img](https://lh3.googleusercontent.com/KMxuCHXefcAw3OkTPso4VAJRXJHguVmFNJfP1aTeWlxCqxkYXZgN1Hp233JltkUXkNrKYMbGc8hL3mBkAbDxstE4Zb8HalGug-qSROHFAPtXKIfFwmQYfCOHhGMIIqf_db-X9Gf7XuvNMA2eDw)6 Ahora vamos a las tablas creadas para las migraciones y las configuramos según nos dice el tutorial:![img](https://lh3.googleusercontent.com/CSY5K6B8qTMYGTSPJtx9dTcYi9RRc7aQbLIHXX80cEASINaf3GChI-_FPeiElM2Eg-hmgAmbNqs3BM7or5plbrL3FnQAx0IMPInXrkeyntMCydQtgrxFBAvuN--RS8oXbn7U9K7jdFLXr8D8-w)![img](https://lh6.googleusercontent.com/f0W-rJXRzah9yR909EflYSklKRktbwE25-fO_JLsKk50_pQhRuUzb_t9zzUrg8KUaCrkCik22TCJFZNZoOcEG0K9zJ4r9RNdXyiixv_GBVZdNh4Elft78srjy4y1n7MX8wY_ofNbpsXZvBGHdw)7 Creamos base de datos de prueba y modificamos DatabaseSeeder y Postfactory con el codigo que nos proporciona el tutorial (https://cosasdedevs.com/posts/creacion-de-modelos-y-migracion-de-tablas-con-laravel-8/) en ambos casos.![img](https://lh4.googleusercontent.com/d0heM3OEqGarMEgsKqBmrzVyrObSfwD7zIPA7QO1glgrkiu6eLaoU_ZGfs9bubM7BKS2P6Im_TbXoDfPs4HZlTQRtjCL5lHXHMQHSgRzbndcKfxOi-xiMs1QSWp2mpsZyKBuuNFbEyhIpsGTRg)![img](https://lh3.googleusercontent.com/aGi4BllBPqiQAJT5wg6nQLsCjHAkuGjdImqlKp1L7jPK-_CvV_-j0sptbo3YGf526ocpGNbd7h0e-yLOJH5OHDy8_A8bdhoWYn3zGvDe1iLOwz4xPdcKCKuxpRzJlCUCEe3DMvxy5DGX4YIglA)8 Añadiendo la función para crear un usuario podremos acceder por fin a la aplicación y asociar Posts.![img](https://lh5.googleusercontent.com/tMMhh7eMsMq7kdKQtKGUuA3YNMSbWiwFGd8vd7yMXhk683r3Z2vYA36C6xmSk4twLSFoMkZ2tDrGFHVJNPAdjqh3AUCp0rbmDyt_JPHvthbEOr7KSE47vvaoGDKRIjNx4mtiGXxPI_zvDA9ieQ)
+![img](https://lh6.googleusercontent.com/bUPiuWM5PaLsiKi_77vwRlEIgSzANluD_lZ0Ono_dylOpPIXNFjG6THIcBybUeMFR3J04nOoaxPi2pl9hWmrbUSmlKlijli5rJElPz1N0q62ztvT9LsXg--B3YBdl8hFXGNCOPLwJ021W75KzQ)
+9 Ahora creamos un controlador para los posts con el siguiente comando:
+![img](https://lh4.googleusercontent.com/DjNdVq10kiLyBmHwKLfiqLMqs4HijPyyGqvdT1Eb_YIyiiHjZ4NKWkGLW4mvbOtzj4DKSJiYsVwlW4yyGKYsZ74wcaGEOTWE_znx72YsG6NQ8rGnN9FoG4GPOCb1rXmZ5XnajtRg_YWLw4wBMw)10 Una vez creados todos los controladores que nos solicitan lo rellenamos con los datos que nos aporta el tutorial.
+![img](https://lh3.googleusercontent.com/tsIPuh2iEmmmtBtnv-AgnRlyXsld1FRI_bCUEjEQtIOeTRkMpDEGRW9uh8yaEQ4f5EqmM47ffbU4d9TyVB-uJH2nRaag3XnG_rIIWMtwRUQ5ES5hV9rMwdsvDDmdS7-6ivECxPMkNnoG6aVdXw)
+11 Ahora modificamos nuestras plantillas app.blade, post.blade y home.blade.php con el codigo que nos aporta el tutorial.12 Finalmente conectamos todo en el archivo web.php de routes de la siguiente manera: 
+![img](https://lh5.googleusercontent.com/LFMoxCrvCQGuTSAn4TreO_nQdlBSmBqYZ3Q3EZoLVN6wmjv8nsagqQE4S8teJPeuU5irl7yn_wlm5CVlmjN87wEuFqKqvDj1wB4UdrTzl4yN6eJ_BX9ns6CaafrnlFFRgV6XmP0Pb1XOaKNA_Q)
+13 Así debería verse el proyecto en este paso (permitiendo logearnos):
+![img](https://lh5.googleusercontent.com/C4LDH6lwnzmYok7z_bbbFxPORb7jSPLkNuuvtLq6UxUlDGEeuUAHnzsPz9zF7yyvxmp-Wsgde2QoUXVVbWVdTCzTXr0q88XJZDwGqtwH1q1r8383yWpgAgvZXDb7uKqG_5dmwyRGrFNTsu2JCA)
+![img](https://lh3.googleusercontent.com/K53Dbn4qdY3tdLC0LCoxPsCg_XpLkSTW2dXOspjRrt9ym7rXfXxRZQl3jAJ8UjSc2hHZMn_4v3LNRWQti6rFTqz1klzCk5f0K-C2hCx6curyYrYS9LgofRC6s5NQ-Kv5-M47qTtmD-t5EWknBA)
+14 Como ya tenemos el controlador vamos a crear la plantilla, creamos un nuevo archivo *list.blade.php* en la carpeta posts, en las vistas. Ahora vamos al navegador http://127.0.0.1:8000/admin/posts y se mostrará lo siguiente:
+![img](https://lh3.googleusercontent.com/bkm-TLVyaCaXPRohESFq6G12tPM7e9clFxPVskXvKDUYSLG87wXWH1ZdC-1rk0OnK0HDQ74E1J0nhjspGgvDSO2cs4b8nuE8BWvI0oWfyuYmMIjGfqAEpFi786dMYBt_N5zQxlhnAEnQFVe8Gw)
+15 Creamos los archivos para realizar los comentarios y para solicitarlos como nos dice el ejercicio y completamos con el código correspondiente a cada uno.
+16 Modificamos una vez más los Controladores asociados a los archivos que acabamos de añadir con el fin de que funcionen correctamente.
+17 Realizamos el mismo proceso para poder Borrar y Editar posts.
+18 Por último creamos los archivos que nos pide el tutorial para poder realizar los tests y ejecutamos el siguiente comando: 
 
-- 1 Creamos un sitio rapido de Laravel por medio de Laragon
-
-  ![image-20220524130951101](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524130951101.png)
-
-- 2 Introducimos los siguientes comandos
-
-  - ```composer require laravel/ui --devbash
-    composer require laravel/ui --dev (instalar Laravel/ui)
-    composer require laravel-frontend-presets/tailwindcss --dev (dependencia para usar los estilos de Tailwind CSS)
-    php artisan ui tailwindcss --auth (generar los archivos de autenticación )
-    npm install && npm run dev (instalar las dependencias que utiliza Tailwind CSS y compilar los css y js.)
-    ```
-
-- 3 Ahora lanzamos el comando php artisan serve para comprobar que hasta ahora todo funciona correctamente
-
-![image-20220524133449267](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524133449267.png)
-
-
-
-- 4 Conectamos correctamente el proyecto con la base de datos de PhpMyadmin
-
-![image-20220524133652165](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524133652165.png)
-
-- 5 Crear los modelos y migraciones para los posts y comentarios. Al añadir **-m** le estamos diciendo que también nos cree el archivo para las migraciones.
-
-![image-20220524133813489](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524133813489.png)
-
-- 6  Ahora vamos a las tablas creadas para las migraciones y las configuramos segun nos dice el tutorial:
-
-  ![image-20220524141145166](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524141145166.png)
-
-  
-
-![image-20220524141221498](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524141221498.png)
-
-- 7 Creamos base de datos de prueba y modificamos DatabaseSeeder y Postfactory con el codigo que nos proporciona el tutorial (https://cosasdedevs.com/posts/creacion-de-modelos-y-migracion-de-tablas-con-laravel-8/) en ambos casos. 
-
-  ![image-20220524142229492](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524142229492.png)
-
-  ![image-20220524142253734](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524142253734.png)
-
-  - 8 Añadiendo la funcion para crear un usuario podremos acceder por fin a la aplicacion y asociar Posts.
-
-  
-
-  ![image-20220524142558462](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524142558462.png)
-
-  
-
-  ![image-20220524142855454](C:\Users\Usuario\AppData\Roaming\Typora\typora-user-images\image-20220524142855454.png)
-
-  
-
-  - 
-
-  
-
+![img](https://lh6.googleusercontent.com/JWGVeAl-c_ImIxLe-cPk879WbbJ4TwAirv26FOLivp3iUMvGLdsFpVUpGKLy7OQAtmobNeGlyTtWqfFqPFq0nU0-kI-6avUSI4OIycJ2-fQ8MIBBhV1A-EVFiioPCCPJ2fCESDuIkUyMU_Osmg)
+19 Si todos los test son satisfactorios sólo faltaría crear el archivo PostTest con el siguiente comando y completarlo con el código que nos proporcionan:
+![img](https://lh4.googleusercontent.com/UB3AeVigM8tvWFt7xRr5Qrool6ozr6jDhF7Bonu0ebGf9TR4XXg6nmaPnJWE_CEdoJ-haqua54wnrv38rQBgaKOR7qGDo2wwTe8Rb9XnNrsgppPGq3eH5JJiPTpfavahV39iqAdQoq8ZaTewOw)
+20 Ahora el blog debería ser perfectamente funcional permitiéndonos crear, editar y borrar posts, hacer comentarios, logearnos y crear usuarios.
+![img](https://lh5.googleusercontent.com/7CnuRujHufwD5cEpDIT0j-HCx9DAEdv2xbYxG7onMxCTp9-PB7w3n4X0BfbBKvEJ2HI8G429kWCxADWgayI245wbDQi_jZQeYzrjmVS3as-5SbEYU_zlfSH2NGhuis7MiYT4FSpeLC5AI3vPCw)
